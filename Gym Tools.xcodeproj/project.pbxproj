@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBC9ABCB26E900CB00BEAE1A /* Gym Tools WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBC9ABD026E900CD00BEAE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */; };
+		EBC9ABD726E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBC9ABD626E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EBC9ABDC26E900CD00BEAE1A /* Gym_ToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABDB26E900CD00BEAE1A /* Gym_ToolsApp.swift */; };
+		EBC9ABDE26E900CD00BEAE1A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABDD26E900CD00BEAE1A /* ContentView.swift */; };
+		EBC9ABE026E900CD00BEAE1A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABDF26E900CD00BEAE1A /* NotificationController.swift */; };
+		EBC9ABE226E900CD00BEAE1A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABE126E900CD00BEAE1A /* NotificationView.swift */; };
+		EBC9ABE426E900CD00BEAE1A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABE326E900CD00BEAE1A /* ComplicationController.swift */; };
+		EBC9ABE626E900CE00BEAE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC9ABE526E900CE00BEAE1A /* Assets.xcassets */; };
+		EBC9ABE926E900CE00BEAE1A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC9ABE826E900CE00BEAE1A /* Preview Assets.xcassets */; };
+		EBC9ABF526E900CE00BEAE1A /* Gym_ToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABF426E900CE00BEAE1A /* Gym_ToolsTests.swift */; };
+		EBC9AC0026E900CE00BEAE1A /* Gym_ToolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC9ABFF26E900CE00BEAE1A /* Gym_ToolsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBC9ABCC26E900CB00BEAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC9ABC026E900CB00BEAE1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC9ABC926E900CB00BEAE1A;
+			remoteInfo = "Gym Tools WatchKit App";
+		};
+		EBC9ABD826E900CD00BEAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC9ABC026E900CB00BEAE1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC9ABD526E900CD00BEAE1A;
+			remoteInfo = "Gym Tools WatchKit Extension";
+		};
+		EBC9ABF126E900CE00BEAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC9ABC026E900CB00BEAE1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC9ABD526E900CD00BEAE1A;
+			remoteInfo = "Gym Tools WatchKit Extension";
+		};
+		EBC9ABFC26E900CE00BEAE1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBC9ABC026E900CB00BEAE1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBC9ABC926E900CB00BEAE1A;
+			remoteInfo = "Gym Tools WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBC9AC0726E900CE00BEAE1A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EBC9ABD726E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9AC0B26E900CE00BEAE1A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EBC9ABCB26E900CB00BEAE1A /* Gym Tools WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EBC9ABC626E900CB00BEAE1A /* Gym Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC9ABD126E900CD00BEAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC9ABD626E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Gym Tools WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9ABDB26E900CD00BEAE1A /* Gym_ToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_ToolsApp.swift; sourceTree = "<group>"; };
+		EBC9ABDD26E900CD00BEAE1A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EBC9ABDF26E900CD00BEAE1A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EBC9ABE126E900CD00BEAE1A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		EBC9ABE326E900CD00BEAE1A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		EBC9ABE526E900CE00BEAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBC9ABE826E900CE00BEAE1A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EBC9ABEA26E900CE00BEAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC9ABEB26E900CE00BEAE1A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		EBC9ABF026E900CE00BEAE1A /* Gym ToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym ToolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9ABF426E900CE00BEAE1A /* Gym_ToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_ToolsTests.swift; sourceTree = "<group>"; };
+		EBC9ABF626E900CE00BEAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC9ABFB26E900CE00BEAE1A /* Gym ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gym ToolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBC9ABFF26E900CE00BEAE1A /* Gym_ToolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym_ToolsUITests.swift; sourceTree = "<group>"; };
+		EBC9AC0126E900CE00BEAE1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBC9ABD326E900CD00BEAE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABED26E900CE00BEAE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABF826E900CE00BEAE1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBC9ABBF26E900CB00BEAE1A = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABCE26E900CB00BEAE1A /* Gym Tools WatchKit App */,
+				EBC9ABDA26E900CD00BEAE1A /* Gym Tools WatchKit Extension */,
+				EBC9ABF326E900CE00BEAE1A /* Gym ToolsTests */,
+				EBC9ABFE26E900CE00BEAE1A /* Gym ToolsUITests */,
+				EBC9ABC726E900CB00BEAE1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC9ABC726E900CB00BEAE1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABC626E900CB00BEAE1A /* Gym Tools.app */,
+				EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */,
+				EBC9ABD626E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex */,
+				EBC9ABF026E900CE00BEAE1A /* Gym ToolsTests.xctest */,
+				EBC9ABFB26E900CE00BEAE1A /* Gym ToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBC9ABCE26E900CB00BEAE1A /* Gym Tools WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */,
+				EBC9ABD126E900CD00BEAE1A /* Info.plist */,
+			);
+			path = "Gym Tools WatchKit App";
+			sourceTree = "<group>";
+		};
+		EBC9ABDA26E900CD00BEAE1A /* Gym Tools WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABDB26E900CD00BEAE1A /* Gym_ToolsApp.swift */,
+				EBC9ABDD26E900CD00BEAE1A /* ContentView.swift */,
+				EBC9ABDF26E900CD00BEAE1A /* NotificationController.swift */,
+				EBC9ABE126E900CD00BEAE1A /* NotificationView.swift */,
+				EBC9ABE326E900CD00BEAE1A /* ComplicationController.swift */,
+				EBC9ABE526E900CE00BEAE1A /* Assets.xcassets */,
+				EBC9ABEA26E900CE00BEAE1A /* Info.plist */,
+				EBC9ABEB26E900CE00BEAE1A /* PushNotificationPayload.apns */,
+				EBC9ABE726E900CE00BEAE1A /* Preview Content */,
+			);
+			path = "Gym Tools WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		EBC9ABE726E900CE00BEAE1A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABE826E900CE00BEAE1A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EBC9ABF326E900CE00BEAE1A /* Gym ToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABF426E900CE00BEAE1A /* Gym_ToolsTests.swift */,
+				EBC9ABF626E900CE00BEAE1A /* Info.plist */,
+			);
+			path = "Gym ToolsTests";
+			sourceTree = "<group>";
+		};
+		EBC9ABFE26E900CE00BEAE1A /* Gym ToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC9ABFF26E900CE00BEAE1A /* Gym_ToolsUITests.swift */,
+				EBC9AC0126E900CE00BEAE1A /* Info.plist */,
+			);
+			path = "Gym ToolsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBC9ABC526E900CB00BEAE1A /* Gym Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC9AC0C26E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools" */;
+			buildPhases = (
+				EBC9ABC426E900CB00BEAE1A /* Resources */,
+				EBC9AC0B26E900CE00BEAE1A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC9ABCD26E900CB00BEAE1A /* PBXTargetDependency */,
+			);
+			name = "Gym Tools";
+			productName = "Gym Tools";
+			productReference = EBC9ABC626E900CB00BEAE1A /* Gym Tools.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		EBC9ABC926E900CB00BEAE1A /* Gym Tools WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC9AC0826E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools WatchKit App" */;
+			buildPhases = (
+				EBC9ABC826E900CB00BEAE1A /* Resources */,
+				EBC9AC0726E900CE00BEAE1A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC9ABD926E900CD00BEAE1A /* PBXTargetDependency */,
+			);
+			name = "Gym Tools WatchKit App";
+			productName = "Gym Tools WatchKit App";
+			productReference = EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EBC9ABD526E900CD00BEAE1A /* Gym Tools WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC9AC0426E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools WatchKit Extension" */;
+			buildPhases = (
+				EBC9ABD226E900CD00BEAE1A /* Sources */,
+				EBC9ABD326E900CD00BEAE1A /* Frameworks */,
+				EBC9ABD426E900CD00BEAE1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gym Tools WatchKit Extension";
+			productName = "Gym Tools WatchKit Extension";
+			productReference = EBC9ABD626E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		EBC9ABEF26E900CE00BEAE1A /* Gym ToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC9AC0F26E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym ToolsTests" */;
+			buildPhases = (
+				EBC9ABEC26E900CE00BEAE1A /* Sources */,
+				EBC9ABED26E900CE00BEAE1A /* Frameworks */,
+				EBC9ABEE26E900CE00BEAE1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC9ABF226E900CE00BEAE1A /* PBXTargetDependency */,
+			);
+			name = "Gym ToolsTests";
+			productName = "Gym ToolsTests";
+			productReference = EBC9ABF026E900CE00BEAE1A /* Gym ToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBC9ABFA26E900CE00BEAE1A /* Gym ToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBC9AC1226E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym ToolsUITests" */;
+			buildPhases = (
+				EBC9ABF726E900CE00BEAE1A /* Sources */,
+				EBC9ABF826E900CE00BEAE1A /* Frameworks */,
+				EBC9ABF926E900CE00BEAE1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBC9ABFD26E900CE00BEAE1A /* PBXTargetDependency */,
+			);
+			name = "Gym ToolsUITests";
+			productName = "Gym ToolsUITests";
+			productReference = EBC9ABFB26E900CE00BEAE1A /* Gym ToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBC9ABC026E900CB00BEAE1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EBC9ABC526E900CB00BEAE1A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EBC9ABC926E900CB00BEAE1A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EBC9ABD526E900CD00BEAE1A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EBC9ABEF26E900CE00BEAE1A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EBC9ABD526E900CD00BEAE1A;
+					};
+					EBC9ABFA26E900CE00BEAE1A = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EBC9ABC926E900CB00BEAE1A;
+					};
+				};
+			};
+			buildConfigurationList = EBC9ABC326E900CB00BEAE1A /* Build configuration list for PBXProject "Gym Tools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBC9ABBF26E900CB00BEAE1A;
+			productRefGroup = EBC9ABC726E900CB00BEAE1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBC9ABC526E900CB00BEAE1A /* Gym Tools */,
+				EBC9ABC926E900CB00BEAE1A /* Gym Tools WatchKit App */,
+				EBC9ABD526E900CD00BEAE1A /* Gym Tools WatchKit Extension */,
+				EBC9ABEF26E900CE00BEAE1A /* Gym ToolsTests */,
+				EBC9ABFA26E900CE00BEAE1A /* Gym ToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBC9ABC426E900CB00BEAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABC826E900CB00BEAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC9ABD026E900CD00BEAE1A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABD426E900CD00BEAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC9ABE926E900CE00BEAE1A /* Preview Assets.xcassets in Resources */,
+				EBC9ABE626E900CE00BEAE1A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABEE26E900CE00BEAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABF926E900CE00BEAE1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBC9ABD226E900CD00BEAE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC9ABE026E900CD00BEAE1A /* NotificationController.swift in Sources */,
+				EBC9ABDE26E900CD00BEAE1A /* ContentView.swift in Sources */,
+				EBC9ABE426E900CD00BEAE1A /* ComplicationController.swift in Sources */,
+				EBC9ABDC26E900CD00BEAE1A /* Gym_ToolsApp.swift in Sources */,
+				EBC9ABE226E900CD00BEAE1A /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABEC26E900CE00BEAE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC9ABF526E900CE00BEAE1A /* Gym_ToolsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC9ABF726E900CE00BEAE1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC9AC0026E900CE00BEAE1A /* Gym_ToolsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBC9ABCD26E900CB00BEAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC9ABC926E900CB00BEAE1A /* Gym Tools WatchKit App */;
+			targetProxy = EBC9ABCC26E900CB00BEAE1A /* PBXContainerItemProxy */;
+		};
+		EBC9ABD926E900CD00BEAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC9ABD526E900CD00BEAE1A /* Gym Tools WatchKit Extension */;
+			targetProxy = EBC9ABD826E900CD00BEAE1A /* PBXContainerItemProxy */;
+		};
+		EBC9ABF226E900CE00BEAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC9ABD526E900CD00BEAE1A /* Gym Tools WatchKit Extension */;
+			targetProxy = EBC9ABF126E900CE00BEAE1A /* PBXContainerItemProxy */;
+		};
+		EBC9ABFD26E900CE00BEAE1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBC9ABC926E900CB00BEAE1A /* Gym Tools WatchKit App */;
+			targetProxy = EBC9ABFC26E900CE00BEAE1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EBC9AC0226E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBC9AC0326E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBC9AC0526E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gym Tools WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Gym Tools WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EBC9AC0626E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Gym Tools WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Gym Tools WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EBC9AC0926E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				IBSC_MODULE = Gym_Tools_WatchKit_Extension;
+				INFOPLIST_FILE = "Gym Tools WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EBC9AC0A26E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				IBSC_MODULE = Gym_Tools_WatchKit_Extension;
+				INFOPLIST_FILE = "Gym Tools WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EBC9AC0D26E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EBC9AC0E26E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EBC9AC1026E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				INFOPLIST_FILE = "Gym ToolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gym Tools WatchKit Extension.appex/Gym Tools WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EBC9AC1126E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				INFOPLIST_FILE = "Gym ToolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gym Tools WatchKit Extension.appex/Gym Tools WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		EBC9AC1326E900CE00BEAE1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				INFOPLIST_FILE = "Gym ToolsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-ToolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Gym Tools WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		EBC9AC1426E900CE00BEAE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H5W4ZK8B9A;
+				INFOPLIST_FILE = "Gym ToolsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "slotruglio.Gym-ToolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Gym Tools WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBC9ABC326E900CB00BEAE1A /* Build configuration list for PBXProject "Gym Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC0226E900CE00BEAE1A /* Debug */,
+				EBC9AC0326E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC9AC0426E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC0526E900CE00BEAE1A /* Debug */,
+				EBC9AC0626E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC9AC0826E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC0926E900CE00BEAE1A /* Debug */,
+				EBC9AC0A26E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC9AC0C26E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC0D26E900CE00BEAE1A /* Debug */,
+				EBC9AC0E26E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC9AC0F26E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym ToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC1026E900CE00BEAE1A /* Debug */,
+				EBC9AC1126E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBC9AC1226E900CE00BEAE1A /* Build configuration list for PBXNativeTarget "Gym ToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBC9AC1326E900CE00BEAE1A /* Debug */,
+				EBC9AC1426E900CE00BEAE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBC9ABC026E900CB00BEAE1A /* Project object */;
+}
