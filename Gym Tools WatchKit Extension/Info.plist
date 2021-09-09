@@ -33,9 +33,7 @@
 		<string>com.apple.watchkit</string>
 	</dict>
 	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-	</array>
+	<array/>
 	<key>WKBackgroundModes</key>
 	<array>
 		<string>alarm</string>

@@ -12,31 +12,16 @@ import SwiftUI
 var wrist : Int = 0
 var session: WKExtendedRuntimeSession!
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WKExtendedRuntimeSessionDelegate {
-
-    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
-        print("Session stopped at", Date())
-    }
-
-    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        print("Session started at", Date())
-    }
-
-    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-
-    }
-
-    func applicationDidBecomeActive() {
-
-        session.delegate = self
-    }
-    
-    func startSession() {
-        session = WKExtendedRuntimeSession()
-        session.delegate = self
-        session.start()
-    }
+func startSession() {
+    session = WKExtendedRuntimeSession()
+    session.start()
 }
+
+func stopSession() {
+    session.invalidate()
+    
+}
+
 struct GreenButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
@@ -124,7 +109,6 @@ struct ContentView: View {
     @State var timerOn = false
     @State var timeView = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
     var body: some View {
         VStack(alignment: .center, content: {
             HStack( alignment: VerticalAlignment.center, spacing: 0.0, content: {
@@ -186,8 +170,7 @@ struct ContentView: View {
             if timeRemaining > 0 {
                 if(firstTime){
                     firstTime = false
-                    let test = ExtensionDelegate()
-                    test.startSession()
+                    startSession()
                     
                 }
                 timeRemaining -= 1
@@ -196,6 +179,7 @@ struct ContentView: View {
                 print("alarm")
                 WKInterfaceDevice.current().play(.notification)
                 self.timerOn = false
+                stopSession()
             }
         }
         .padding()

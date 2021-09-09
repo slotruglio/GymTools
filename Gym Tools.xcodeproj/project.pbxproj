@@ -78,6 +78,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB84C80D26EA5C5F000657F8 /* Gym Tools WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gym Tools WatchKit App.entitlements"; sourceTree = "<group>"; };
 		EBC9ABC626E900CB00BEAE1A /* Gym Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +152,7 @@
 		EBC9ABCE26E900CB00BEAE1A /* Gym Tools WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				EB84C80D26EA5C5F000657F8 /* Gym Tools WatchKit App.entitlements */,
 				EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */,
 				EBC9ABD126E900CD00BEAE1A /* Info.plist */,
 			);
@@ -606,6 +608,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gym Tools WatchKit App/Gym Tools WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5W4ZK8B9A;
 				IBSC_MODULE = Gym_Tools_WatchKit_Extension;
@@ -633,6 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Gym Tools WatchKit App/Gym Tools WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5W4ZK8B9A;
 				IBSC_MODULE = Gym_Tools_WatchKit_Extension;
