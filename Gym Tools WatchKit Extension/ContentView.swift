@@ -10,7 +10,6 @@ import SwiftUI
 
 //var wrist : Int = WKInterfaceDevice.current().wristLocation.rawValue
 var wrist : Int = 0
-var testa = "abc"
 var session: WKExtendedRuntimeSession!
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate, WKExtendedRuntimeSessionDelegate {
