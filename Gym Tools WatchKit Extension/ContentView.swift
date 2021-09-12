@@ -8,8 +8,8 @@
 import SwiftUI
 
 
-//var wrist : Int = WKInterfaceDevice.current().wristLocation.rawValue
-var wrist : Int = 0
+var wrist : Int = WKInterfaceDevice.current().wristLocation.rawValue
+
 var session: WKExtendedRuntimeSession!
 
 func startSession() {
@@ -112,52 +112,73 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .center, content: {
             HStack( alignment: VerticalAlignment.center, spacing: 0.0, content: {
-                if(wrist == 0){
-                    Button(action: {
-                        print(wrist)
-                        self.count += 1
-                        print("timer is \(timerOn)")
-                    }, label: {
-                        Text("+")
-                            .padding(.horizontal)
-                    })
-                    .buttonStyle(GreenButton())
+                if(wrist == 1){
+                    
+                    if(count > 0){
+                        Button(action: {
+                            self.count = 0
+                        }, label: {
+                            Image(systemName: "trash")
+                        })
+                        .colorMultiply(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                    }
                     
                     Text("\(count)")
                         .font(.largeTitle)
-                        .frame(width: 100, height: 40.0, alignment: .trailing)
+                        .frame(width: 100, height: 40.0, alignment: .leading)
                         
                 }else{
                     Text("\(count)")
                         .font(.largeTitle)
                         .frame(width: 100, height: 50.0)
-                    Button(action: {
-                        self.count += 1
-                    }, label: {
-                        Text("+")
-                    })
-                    .padding(.leading, 5.0)
+                    if(count > 0){
+                        Button(action: {
+                            self.count = 0
+                        }, label: {
+                            Image(systemName: "trash")
+                        })
+                        .colorMultiply(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                    }
+                    
                 }
             })
-            
             
             Button(action: {
-                self.count = 0
+                print(wrist)
+                self.count += 1
+                print("timer is \(timerOn)")
             }, label: {
-                Text("Clear")
+                Text("+")
+                    .padding(.horizontal)
             })
+            
+            
             .padding(.vertical)
-            .colorMultiply(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+            .colorMultiply(.green)
             
             HStack(alignment: .center, spacing: 0, content: {
-                NavigationLink(
-                    destination: TimeView(timeRemaining: $timeRemaining, alarm: $timerOn, timeViewOn: $timeView), isActive: $timeView){
-                    Text("Set")
+                
+                if(wrist == 1){
+                    NavigationLink(
+                        destination: TimeView(timeRemaining: $timeRemaining, alarm: $timerOn, timeViewOn: $timeView), isActive: $timeView){
+                        Text("Set")
+                    }
+                    .frame(width: 50)
+                    Text("\(timeRemaining) s")
+                        .font(.title2)
+                        .frame(width: 100.0, height: 39.0, alignment: .trailing)
                 }
-                .frame(width: 50.0)
-                Text("\(timeRemaining) s")
-                    .font(.title2)
-                    .frame(width: 100.0, height: 39.0, alignment: .trailing)
+                else{
+                    Text("\(timeRemaining) s")
+                        .font(.title2)
+                        .frame(width: 100.0, height: 39.0, alignment: .leading)
+                    NavigationLink(
+                        destination: TimeView(timeRemaining: $timeRemaining, alarm: $timerOn, timeViewOn: $timeView), isActive: $timeView){
+                        Text("Set")
+                    }
+                    .frame(width: 50)
+                }
+                
             })
             
                 

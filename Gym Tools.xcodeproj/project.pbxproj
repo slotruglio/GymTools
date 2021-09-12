@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB84C81326EE14D7000657F8 /* homeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB84C81226EE14D7000657F8 /* homeView.swift */; };
 		EBC9ABCB26E900CB00BEAE1A /* Gym Tools WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EBC9ABD026E900CD00BEAE1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */; };
 		EBC9ABD726E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EBC9ABD626E900CD00BEAE1A /* Gym Tools WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -79,6 +80,7 @@
 
 /* Begin PBXFileReference section */
 		EB84C80D26EA5C5F000657F8 /* Gym Tools WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gym Tools WatchKit App.entitlements"; sourceTree = "<group>"; };
+		EB84C81226EE14D7000657F8 /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
 		EBC9ABC626E900CB00BEAE1A /* Gym Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC9ABCA26E900CB00BEAE1A /* Gym Tools WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gym Tools WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC9ABCF26E900CD00BEAE1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				EBC9ABEA26E900CE00BEAE1A /* Info.plist */,
 				EBC9ABEB26E900CE00BEAE1A /* PushNotificationPayload.apns */,
 				EBC9ABE726E900CE00BEAE1A /* Preview Content */,
+				EB84C81226EE14D7000657F8 /* homeView.swift */,
 			);
 			path = "Gym Tools WatchKit Extension";
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				EBC9ABE426E900CD00BEAE1A /* ComplicationController.swift in Sources */,
 				EBC9ABDC26E900CD00BEAE1A /* Gym_ToolsApp.swift in Sources */,
 				EBC9ABE226E900CD00BEAE1A /* NotificationView.swift in Sources */,
+				EB84C81326EE14D7000657F8 /* homeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
